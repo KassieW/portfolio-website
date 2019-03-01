@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+}
+
+/*****  HEADER *****/
+header {
+  height: 795px;
+}
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 6em;
+}
+p{
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+}
+.hero-image {
+  background-image: url(../img/desert.png);
+  background-color: #cccccc;
+  height: 795px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+nav {
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+}
