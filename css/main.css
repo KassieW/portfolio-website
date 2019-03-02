@@ -3,9 +3,9 @@ body {
   font-family: 'Anton', sans-serif;
   color: #8c869e;
 }
-
 #portfolio, #about, #contact {
-  height: 600px;
+  height: 685px;
+  padding: 20 20 40 20px;
 }
 
 h2{
@@ -15,12 +15,15 @@ h2{
   margin-top: 1.5em;
 }
 p{
+  font-family: 'Cabin', sans-serif;
   font-size: 1.5em;
+  line-height: 1.8em;
 }
 /***** GRID *****/
 
 .full-width {
     width: 100%;
+    margin: 0;
 }
 .third-width {
     float: left;
@@ -85,23 +88,26 @@ nav ul li a {
 }
 
 /***** PORTFOLIO *****/
-
+#portfolio .third-width {
+  margin-left: 30px;
+}
 #portfolio .photo {
-  border: 5px solid  #8c869e;
+  border: 2px solid  #8c869e;
 }
 a{
-  text-decoration: none;
   color: #8c869e;
+}
+
+h3{
+  font-size: 2em;
 }
 
 /***** ABOUT *****/
 #about .full-width{
   background:  #19535f;
   color:  #c1bdb3;
-  height: 600px;
-  padding-bottom: 30px;
   overflow: auto;
-
+  padding-bottom: 30px;
 }
 #about h2{
   clear: both;
@@ -109,6 +115,7 @@ a{
 #about img#contact-img{
   border-radius: 50%;
   margin-left: 150px;
+  padding-top: 30px;
 }
 #about p{
   margin-right: 150px;
@@ -116,6 +123,25 @@ a{
 
 /***** CONTACT *****/
 #contact {
+  background: #8c869e;
+  color: #c1bdb3;
   overflow: auto;
-  padding-top: 1.5em;
+}
+
+#contact .half-width{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#contact .fas {
+  color:   #19535f;
+  word-spacing: .3em;
+  font-size: 30px;
+}
+
+#contact p{
+  font-size: 2em;
+}
+#contact span{
+ font-family: "Anton", sans-serif;
 }
