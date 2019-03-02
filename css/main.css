@@ -1,5 +1,39 @@
 body {
   width: 100%;
+  font-family: 'Anton', sans-serif;
+  color: #8c869e;
+}
+
+#portfolio, #about, #contact {
+  height: 600px;
+}
+
+h2{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+p{
+  font-size: 1.5em;
+}
+/***** GRID *****/
+
+.full-width {
+    width: 100%;
+}
+.third-width {
+    float: left;
+    width: 28%;
+    height: 500px;
+    margin: 10px;
+    padding: 25px;
+}
+.half-width {
+    float: left;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
 }
 
 /*****  HEADER *****/
@@ -33,13 +67,12 @@ h1 {
 }
 
 nav {
-  font-family: 'Cabin', sans-serif;
+  background: #8c869e;
   font-size: 1em;
   float: right;
   position: fixed;
-  top: 10px;
+  top: 0px;
   right: 0px;
-  padding-left: 40px;
 }
 nav ul li{
   display: inline-block;
@@ -48,27 +81,41 @@ nav ul li a {
   color:  #c1bdb3;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
 }
 
 /***** PORTFOLIO *****/
-.column{
-  width: 50%;
-  height: 28%;
-  width: 44%;
-  padding: 25px;
-}
 
-.left{
-  margin-left: 9%;
-  float: left;
+#portfolio .photo {
+  border: 5px solid  #8c869e;
 }
-.right{
-  margin-right: 9%;
-  float: right;
+a{
+  text-decoration: none;
+  color: #8c869e;
 }
 
 /***** ABOUT *****/
-.about{
+#about .full-width{
+  background:  #19535f;
+  color:  #c1bdb3;
+  height: 600px;
+  padding-bottom: 30px;
+  overflow: auto;
+
+}
+#about h2{
   clear: both;
+}
+#about img#contact-img{
+  border-radius: 50%;
+  margin-left: 150px;
+}
+#about p{
+  margin-right: 150px;
+}
+
+/***** CONTACT *****/
+#contact {
+  overflow: auto;
+  padding-top: 1.5em;
 }
