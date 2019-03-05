@@ -43,6 +43,7 @@ p{
 header {
   height: 795px;
 }
+
 h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 6em;
@@ -84,7 +85,14 @@ nav ul li a {
   color:  #c1bdb3;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px;
+  padding-right: 20px;
+}
+
+#hero .creditBadge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /***** PORTFOLIO *****/
@@ -100,6 +108,7 @@ a{
 
 h3{
   font-size: 2em;
+  text-decoration: none;
 }
 
 /***** ABOUT *****/
@@ -128,12 +137,7 @@ h3{
   overflow: auto;
 }
 
-#contact .half-width{
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-#contact .fas {
+#contact .fa-envelope, #contact .fa-phone {
   color:   #19535f;
   word-spacing: .3em;
   font-size: 30px;
@@ -144,4 +148,33 @@ h3{
 }
 #contact span{
  font-family: "Anton", sans-serif;
+}
+#contact h4 {
+  font-family: "Cabin", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+#contact ul{
+  text-align: center;
+}
+#contact ul li{
+  display: inline-block;
+}
+#contact ul li a{
+  text-decoration: none;
+}
+#contact .fa-github, .fa-facebook-f, .fa-envelope-square {
+  color:   #19535f;
+  margin: 10px 10px 10px 0;
+  padding: 25px;
+  font-size: 50px;
+}
+
+footer {
+  clear: both;
+  background: #8c869e;
+  color: #c1bdb3;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
 }
