@@ -35,14 +35,14 @@ p {
     width: 28%;
     height: 500px;
     margin: 10px;
-    padding: 25px;
+    padding: 10px;
 }
 
 .half-width {
     float: left;
     width: 45%;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 
