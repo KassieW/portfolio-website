@@ -5,8 +5,7 @@ body {
 }
 
 #portfolio, #about, #contact {
-    height: 685px;
-    padding: 20 20 40 20px;
+    overflow: auto;
 }
 
 h2 {
@@ -33,16 +32,18 @@ p {
 .third-width {
     float: left;
     width: 28%;
-    height: 500px;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 1%;
+    padding: 1%;
 }
 
-.half-width {
+#about .half-width {
     float: left;
-    width: 45%;
-    margin: 10px;
-    padding: 10px;
+    width: 46%;
+}
+
+#contact .half-width {
+    float: left;
+    width: 34%;
 }
 
 
@@ -85,7 +86,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:  #c1bdb3;
+    color: #e6e6e6;
 }
 
 nav {
@@ -102,7 +103,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color:  #c1bdb3;
+    color: #e6e6e6;
     text-transform: uppercase;
     text-decoration: none;
     padding-right: 20px;
@@ -110,9 +111,8 @@ nav ul li a {
 
 
 /***** PORTFOLIO *****/
-
-#portfolio .third-width {
-    margin-left: 30px;
+#portfolio {
+  padding-bottom: 30px;
 }
 
 #portfolio .photo {
@@ -133,7 +133,7 @@ a {
 
 #about .full-width {
     background:  #19535f;
-    color:  #c1bdb3;
+    color:  #e6e6e6;
     overflow: auto;
     padding-bottom: 30px;
 }
@@ -144,12 +144,11 @@ a {
 
 #about img#contact-img {
     border-radius: 50%;
-    margin-left: 150px;
-    padding-top: 30px;
+    margin-left: 15%;
 }
 
 #about p {
-    margin-right: 150px;
+  margin-right: 2%
 }
 
 
@@ -157,8 +156,16 @@ a {
 
 #contact {
     background: #8c869e;
-    color: #c1bdb3;
+    color: #e6e6e6;
     overflow: auto;
+}
+
+#contact .half-width.left {
+  margin-left: 12%
+}
+
+#contact .half-width.right {
+  margin-right: 2%;
 }
 
 #contact .fa-envelope, #contact .fa-phone {
@@ -205,7 +212,7 @@ a {
 footer {
     clear: both;
     background: #8c869e;
-    color: #c1bdb3;
+    color:#e6e6e6;
     text-align: center;
     margin: 0;
     padding: 5px;
